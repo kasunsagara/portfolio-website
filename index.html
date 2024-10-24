@@ -1,0 +1,204 @@
+<html>
+<head>
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#Portfolio">Portfolio</a></li>
+                    <li><a href="#Contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Computer Science Student</p>
+                <h1>Hi, I'm <span>Kasun</span><br>Sagara From Sri Lanka</h1>
+            </div>
+        </div> 
+    </div>
+
+    <div id="about">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About_Me</h1>
+                <p>I am a dedicated Computer Science student at Trincomalee Campus of Eastern University, 
+                   passionately pursuing my degree with a keen interest in software development and 
+                   artificial intelligence. My academic journey has given me a solid foundation in 
+                   programming, algorithms and data structures. Committed to continuous learning, 
+                   I aim to contribute meaningfully to the tech industry by actively participating 
+                   in coding competitions and technical workshops and develop my skills to become 
+                   an expert web developer.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills', event)">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience', event)">Experience</p>
+                    <p class="tab-links" onclick="opentab('education', event)">Education</p>
+                    
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web development</span><br>Web Page Development</li>
+                        <li><span>Udemy Courses</span><br>Certification</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Programme of Study</span><br>Bachelor of Computer Science</li>
+                        <li><span>Leaning</span><br>Computer Science</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>O/L Exam</span><br>To Pass</li>
+                        <li><span>A/L Exam</span><br>To Pass</li>
+                    </ul>
+                </div>
+            </div> 
+        </div>
+    </div>
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My_Services</h1>
+            <div class="services-list">
+                <div class="services1">
+                    <i class="fas fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Web development involves creating and maintaining
+                       websites, encompassing aspects such as web design, 
+                       web content development, client-side/server-side 
+                       scripting, and network security configuration. 
+                       It combines technical skills and creativity to 
+                       build functional, user-friendly websites and 
+                       applications, playing a crucial role in the 
+                       digital world.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="services2">
+                    <i class="fas fa-app-store"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Graphic design is the art and practice of 
+                       planning and projecting ideas and experiences 
+                       with visual and textual content. It involves 
+                       arranging elements such as images, typography 
+                       and colors to communicate messages effectively 
+                       and aesthetically. Visual storytelling through 
+                       images, typography, and layout for effective 
+                       communication.</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div class="services3">
+                    <i class="fas fa-crop-alt"></i>
+                    <h2>Editing</h2>
+                    <p>Editing is refining and improving written 
+                       or visual content for clarity, coherence,
+                       accuracy, and effectiveness. Editing 
+                       involves refining content. Editing is 
+                       the refinement and improvement of 
+                       written, audio, or visual content, 
+                       involving tasks such as proofreading, 
+                       restructuring, and enhancing clarity 
+                       to ensure accuracy and effectiveness 
+                       in communication.</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <div id="Portfolio">
+        <div class="container">
+            <h1 class="sub-title">My_Work</h1>
+            <div class="work list">
+                <div class="work1">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Traveling website</h3>
+                        <p>A traveling website offers comprehensive travel-related information,,including 
+                           destinations, accommodations, booking services, and travel tips.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work2">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Portfolio website</h3>
+                        <p>A portfolio website showcases an individual's or company's work, achievements, 
+                           skills, and services to potential clients or employers.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work3">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Music Website</h3>
+                        <p>A music website offers streaming services, artist profiles, album releases,
+                           concert schedules, and music-related articles and content.</p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See_more </a>
+        </div>
+    </div>
+
+    <div id="Contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact_Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> kasunsagara689@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 0771670585</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebok"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                        <a href=""><i class="fab fa-telegram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download_CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; Kasun. Made wtih <i class="fas fa-heart"></i> by Easy Tutorials</p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+    
+        function opentab(tabname, event){
+            for(var i = 0; i < tablinks.length; i++){
+                tablinks[i].classList.remove("active-link");
+            }
+            for(var i = 0; i < tabcontents.length; i++){
+                tabcontents[i].classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        } 
+        
+    </script>
+</body>
+</html>
