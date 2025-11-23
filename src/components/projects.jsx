@@ -7,13 +7,38 @@ export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [hoveredProject, setHoveredProject] = useState(null);
+  const [selectedCategory, setSelectedCategory] = useState("all");
 
   useEffect(() => {
     const staticProjects = [
       {
         _id: "1",
-        name: "My portfolio website",
-        image: "/picture1.png",
+        name: "Modern Smart Office Network Setup",
+        image: "/picture8.png",
+        description: "A secure, scalable office network with VLANs, wireless SSIDs, VoIP, dynamic routing, and essential server services. Demonstrates real world professional network planning, security, and efficient management.",
+        startDate: "2025-10-26",
+        endDate: "2025-11-04",
+        skills: ["Routing", "Switching", "VLAN Configuration"],
+        githubLink: "https://github.com/kasunsagara/modern-smart-office-network-setup.git",
+        linkedinLink: "https://linkedin.com/in/yourprofile",
+        category: "cisco networking"
+      },
+      {
+        _id: "2",
+        name: "Birthday surprise web application",
+        image: "/picture7.png",
+        description: "Interactive birthday surprise app with countdown, animations, personalized gifts, love messages, flowers, fireworks, chat option, romantic touches, and a heartfelt, engaging user experience.",
+        startDate: "2025-09-28",
+        endDate: "2025-10-02",
+        skills: ["React.js", "Tailwind CSS"],
+        githubLink: "https://github.com/kasunsagara/birthday-surprise-web-application.git",
+        linkedinLink: "https://linkedin.com/in/yourprofile",
+        category: "frontend"
+      },
+      {
+        _id: "3",
+        name: "Portfolio website",
+        image: "/picture6.png",
         description: "A modern, responsive React and Tailwind portfolio with dynamic roles, clean project sections, and an interactive contact form for a smooth, fast, engaging, visually appealing, highly intuitive, and well structured user experience.",
         startDate: "2025-04-18",
         endDate: "2025-05-04",
@@ -23,9 +48,9 @@ export default function Projects() {
         category: "frontend"
       },
       {
-        _id: "2",
+        _id: "4",
         name: "Library management system",
-        image: "/picture2.png",
+        image: "/picture5.png",
         description: "Modern MERN Library System with JWT auth, role-based access, real-time tracking, smart fines, and Supabase images. Admins/librarians manage users browse, borrow, track. Built with React and Tailwind CSS.",
         startDate: "2025-03-08",
         endDate: "2025-04-12",
@@ -35,9 +60,9 @@ export default function Projects() {
         category: "fullstack"
       },
       {
-        _id: "3",
+        _id: "5",
         name: "KSW Beauty care web application",
-        image: "/picture3.png",
+        image: "/picture4.png",
         description: "KSW Beauty Care is a MERN-stack beauty care web application with secure login, role-based access, and features for shopping, inventory management, and analytics, using Supabase for image storage.",
         startDate: "2024-11-26",
         endDate: "2025-02-12",
@@ -47,9 +72,9 @@ export default function Projects() {
         category: "fullstack"
       },
       {
-        _id: "4",
+        _id: "6",
         name: "User management system",
-        image: "/picture4.png",
+        image: "/picture3.png",
         description: "A full-stack MERN application for efficient user management, featuring a responsive CSS-styled UI and RESTful APIs (GET, POST, PUT, DELETE) to view, add, update, and delete user data seamlessly.",
         startDate: "2024-08-14",
         endDate: "2024-10-12",
@@ -59,9 +84,9 @@ export default function Projects() {
         category: "fullstack"
       },
       {
-        _id: "5",
+        _id: "7",
         name: "Spotlight Cinema movie search website",
-        image: "/picture5.png",
+        image: "/picture2.png",
         description: "Spotlight Cinema is a sleek, responsive movie search site built with HTML, CSS, and JavaScript, featuring real-time results via a movie API and a modern, fast interface.",
         startDate: "2024-06-18",
         endDate: "2024-07-06",
@@ -71,9 +96,9 @@ export default function Projects() {
         category: "frontend"
       },
       {
-        _id: "6",
+        _id: "8",
         name: "CEYLON EXPLORER traveling website",
-        image: "/picture6.png",
+        image: "/picture1.png",
         description: "CEYLON EXPLORER is a travel website built using HTML, CSS, Node.js, and MySQL. It allows users to explore top Sri Lankan destinations and includes user registration features.",
         startDate: "2024-02-08",
         endDate: "2024-04-18",
@@ -88,7 +113,13 @@ export default function Projects() {
     setIsLoading(false);
   }, []);
 
-  const AllProjects = projects;
+  // Get unique categories in the desired order: all, fullstack, frontend, cisco networking
+  const categories = ["all", "fullstack", "frontend", "cisco networking"];
+
+  // Filter projects based on selected category
+  const filteredProjects = selectedCategory === "all" 
+    ? projects 
+    : projects.filter(project => project.category === selectedCategory);
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -160,10 +191,34 @@ export default function Projects() {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.4 }}
-            className="text-gray-400 text-lg max-w-2xl mx-auto"
+            className="text-gray-400 text-lg max-w-2xl mx-auto mb-8"
           >
             A collection of my recent work showcasing my skills in web development, mobile apps, and full-stack solutions
           </motion.p>
+
+          {/* Category Filter */}
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            className="flex flex-wrap justify-center gap-4"
+          >
+            {categories.map((category) => (
+              <motion.button
+                key={category}
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 border ${
+                  selectedCategory === category
+                    ? "bg-gradient-to-r from-cyan-500 to-blue-600 text-white border-cyan-400/50 shadow-lg shadow-cyan-500/20"
+                    : "bg-gray-800/50 text-gray-300 border-gray-600 hover:border-cyan-400/30 hover:text-white"
+                }`}
+              >
+                {category.charAt(0).toUpperCase() + category.slice(1)}
+              </motion.button>
+            ))}
+          </motion.div>
         </motion.div>
 
         {/* Projects Grid */}
@@ -181,29 +236,39 @@ export default function Projects() {
               />
             </motion.div>
           ) : (
-            <motion.div
-              variants={containerVariants}
-              initial="hidden"
-              animate="visible"
-              className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8"
-            >
-              <AnimatePresence>
-                {AllProjects.map((project, index) => (
-                  <ProjectCard
-                    key={project._id}
-                    project={project}
-                    index={index}
-                    hoveredProject={hoveredProject}
-                    setHoveredProject={setHoveredProject}
-                    variants={cardVariants}
-                  />
-                ))}
-              </AnimatePresence>
-            </motion.div>
+            <>
+              {/* Projects Count */}
+              <motion.div 
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                className="text-center mb-8"
+              >
+              </motion.div>
+
+              <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8"
+              >
+                <AnimatePresence>
+                  {filteredProjects.map((project, index) => (
+                    <ProjectCard
+                      key={project._id}
+                      project={project}
+                      index={index}
+                      hoveredProject={hoveredProject}
+                      setHoveredProject={setHoveredProject}
+                      variants={cardVariants}
+                    />
+                  ))}
+                </AnimatePresence>
+              </motion.div>
+            </>
           )}
 
           {/* Empty State */}
-          {!isLoading && AllProjects.length === 0 && (
+          {!isLoading && filteredProjects.length === 0 && (
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -263,7 +328,7 @@ function ProjectCard({ project, index, hoveredProject, setHoveredProject, varian
             alt={name}
             className="w-full h-48 object-cover"
           />
-          {/* Overlay Gradient - blur එක ඉවත් කරන්න */}
+          {/* Overlay Gradient */}
           <div className="absolute inset-0 bg-gradient-to-t from-gray-900 via-transparent to-transparent opacity-60"></div>
 
           {/* Category Badge */}
@@ -273,7 +338,7 @@ function ProjectCard({ project, index, hoveredProject, setHoveredProject, varian
             </span>
           </div>
 
-          {/* Hover Actions - blur එක ඉවත් කරන්න */}
+          {/* Hover Actions */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ 
