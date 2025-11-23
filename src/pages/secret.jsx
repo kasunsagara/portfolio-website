@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRobot, FaStar, FaCode, FaBrain, FaPenNib, FaRegSmileBeam, FaSearch, FaComments, FaLaptopCode, FaProjectDiagram } from "react-icons/fa";
+import { FaRobot, FaStar, FaCode, FaBrain, FaPenNib, FaRegSmileBeam, FaSearch, FaComments, FaLaptopCode, FaTasks } from "react-icons/fa";
 import { SiOpenai, SiStellar, SiGooglegemini, SiAnthropic } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -82,10 +82,10 @@ const tools = [
     bgGradient: "from-cyan-500 to-blue-600"
   },
   {
-    name: "Meta AI",
-    description: "AI research lab focused on advancing the field of artificial intelligence",
-    link: "https://www.meta.ai/",
-    icon: <FaProjectDiagram className="text-2xl" />,
+    name: "AI Mode",
+    description: "AI assistant for project management and collaboration",
+    link: "https://www.google.com/search?udm=50&aep=11&atvm=1",
+    icon: <FaTasks className="text-2xl" />,
     bgGradient: "from-indigo-500 to-blue-600"
   }
 ];
