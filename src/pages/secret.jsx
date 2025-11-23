@@ -1,5 +1,5 @@
 import React from "react";
-import { FaRobot, FaStar, FaCode, FaBrain } from "react-icons/fa";
+import { FaRobot, FaStar, FaCode, FaBrain, FaPenNib, FaRegSmileBeam, FaSearch, FaComments, FaLaptopCode, FaProjectDiagram } from "react-icons/fa";
 import { SiOpenai, SiStellar, SiGooglegemini, SiAnthropic } from "react-icons/si";
 import { motion } from "framer-motion";
 
@@ -9,42 +9,84 @@ const tools = [
     description: "Advanced AI chatbot by OpenAI with natural language processing",
     link: "https://chat.openai.com",
     icon: <SiOpenai className="text-2xl" />,
-    bgGradient: "from-green-500 to-emerald-600",
+    bgGradient: "from-green-500 to-emerald-600"
   },
   {
     name: "Gemini",
     description: "Multimodal AI assistant by Google with advanced reasoning",
     link: "https://gemini.google.com",
     icon: <SiGooglegemini className="text-2xl" />,
-    bgGradient: "from-blue-500 to-cyan-600",
+    bgGradient: "from-blue-500 to-cyan-600"
   },
   {
     name: "Copilot",
     description: "AI-powered code completion and development assistant by GitHub",
     link: "https://copilot.github.com",
     icon: <FaRobot className="text-2xl" />,
-    bgGradient: "from-rose-500 to-purple-600",
+    bgGradient: "from-rose-500 to-purple-600"
   },
   {
     name: "Grok",
     description: "Advanced AI assistant with real-time knowledge and coding capabilities",
     link: "https://grok.com",
     icon: <SiStellar className="text-2xl" />,
-    bgGradient: "from-teal-500 to-cyan-600",
+    bgGradient: "from-teal-500 to-cyan-600"
   },
   {
     name: "Deepseek",
     description: "AI-powered search and intelligent discovery platform with automation",
     link: "https://chat.deepseek.com",
     icon: <FaBrain className="text-2xl" />,
-    bgGradient: "from-indigo-500 to-purple-600",
+    bgGradient: "from-indigo-500 to-purple-600"
   },
   {
     name: "Claude",
     description: "Conversational AI assistant focused on safety and reasoning",
     link: "https://claude.ai/new",
     icon: <SiAnthropic className="text-2xl" />,
-    bgGradient: "from-yellow-500 to-orange-600",
+    bgGradient: "from-yellow-500 to-orange-600"
+  },
+  {
+    name: "Manus",
+    description: "AI-driven writing assistant for content creation and editing",
+    link: "https://manus.im/app",
+    icon: <FaPenNib className="text-2xl" />,  
+    bgGradient: "from-pink-500 to-red-600"
+  },
+  {
+    name: "Kimi",
+    description: "AI companion for mental wellness and emotional support",
+    link: "https://www.kimi.com/en",
+    icon: <FaRegSmileBeam className="text-2xl" />,
+    bgGradient: "from-lime-500 to-green-600"
+  },
+  {
+    name: "Perplexity",
+    description: "AI-powered search engine providing concise answers from the web",
+    link: "https://www.perplexity.ai/?login-source=floatingSignup&login-new=true",
+    icon: <FaSearch className="text-2xl" />,
+    bgGradient: "from-violet-500 to-indigo-600"
+  },
+  {
+    name: "Poe",
+    description: "Platform to access multiple AI chatbots in one place",
+    link: "https://poe.com",
+    icon: <FaComments className="text-2xl" />,
+    bgGradient: "from-red-500 to-pink-600"
+  },
+  {
+    name: "Phind",
+    description: "AI-powered search engine for developers",
+    link: "https://www.phind.com/?callbackUrl=https%3A%2F%2Fwww.phind.com%2Fplans",
+    icon: <FaLaptopCode className="text-2xl" />,
+    bgGradient: "from-cyan-500 to-blue-600"
+  },
+  {
+    name: "Meta AI",
+    description: "AI research lab focused on advancing the field of artificial intelligence",
+    link: "https://www.meta.ai/",
+    icon: <FaProjectDiagram className="text-2xl" />,
+    bgGradient: "from-indigo-500 to-blue-600"
   }
 ];
 
