@@ -39,7 +39,6 @@ export default function About() {
       // Cisco Networking
       { name: "Routing", desc: "Network routing protocols", category: "cisco", icon: "FaProjectDiagram" },
       { name: "Switching", desc: "Network switching concepts", category: "cisco", icon: "FaExchangeAlt" },
-      { name: "TCP/IP Protocols", desc: "Internet protocol suite", category: "cisco", icon: "FaGlobe" },
       { name: "VLAN Configuration", desc: "Virtual LAN setup and management", category: "cisco", icon: "FaSitemap" },
 
       // Tools & Technologies
