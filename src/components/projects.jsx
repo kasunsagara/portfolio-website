@@ -13,6 +13,18 @@ export default function Projects() {
     const staticProjects = [
       {
         _id: "1",
+        name: "Smart Home Network Setup with IoT Devices",
+        image: "/picture9.png",
+        description: "This is a Smart Home Network built using Cisco Packet Tracer, where IoT devices are connected to a Wi-Fi network and can be turned ON/OFF using phones or tablets remotely anytime easily.",
+        startDate: "2025-12-25",
+        endDate: "2025-11-29",
+        skills: ["DHCP", "Wi-Fi configuration"],
+        githubLink: "https://github.com/kasunsagara/smart-home-network-setup-with-iot-devices.git",
+        linkedinLink: "https://linkedin.com/in/yourprofile",
+        category: "cisco networking"
+      },
+      {
+        _id: "2",
         name: "Modern Smart Office Network Setup",
         image: "/picture8.png",
         description: "A secure, scalable office network with VLANs, wireless SSIDs, VoIP, dynamic routing, and essential server services. Demonstrates real world professional network planning, security, and efficient management.",
@@ -24,7 +36,7 @@ export default function Projects() {
         category: "cisco networking"
       },
       {
-        _id: "2",
+        _id: "3",
         name: "Birthday surprise web application",
         image: "/picture7.png",
         description: "Interactive birthday surprise app with countdown, animations, personalized gifts, love messages, flowers, fireworks, chat option, romantic touches, and a heartfelt, engaging user experience.",
@@ -36,7 +48,7 @@ export default function Projects() {
         category: "frontend"
       },
       {
-        _id: "3",
+        _id: "4",
         name: "Portfolio website",
         image: "/picture6.png",
         description: "A modern, responsive React and Tailwind portfolio with dynamic roles, clean project sections, and an interactive contact form for a smooth, fast, engaging, visually appealing, highly intuitive, and well structured user experience.",
@@ -48,7 +60,7 @@ export default function Projects() {
         category: "frontend"
       },
       {
-        _id: "4",
+        _id: "5",
         name: "Library management system",
         image: "/picture5.png",
         description: "Modern MERN Library System with JWT auth, role-based access, real-time tracking, smart fines, and Supabase images. Admins/librarians manage users browse, borrow, track. Built with React and Tailwind CSS.",
@@ -60,7 +72,7 @@ export default function Projects() {
         category: "fullstack"
       },
       {
-        _id: "5",
+        _id: "6",
         name: "KSW Beauty care web application",
         image: "/picture4.png",
         description: "KSW Beauty Care is a MERN-stack beauty care web application with secure login, role-based access, and features for shopping, inventory management, and analytics, using Supabase for image storage.",
@@ -72,7 +84,7 @@ export default function Projects() {
         category: "fullstack"
       },
       {
-        _id: "6",
+        _id: "7",
         name: "User management system",
         image: "/picture3.png",
         description: "A full-stack MERN application for efficient user management, featuring a responsive CSS-styled UI and RESTful APIs (GET, POST, PUT, DELETE) to view, add, update, and delete user data seamlessly.",
@@ -84,7 +96,7 @@ export default function Projects() {
         category: "fullstack"
       },
       {
-        _id: "7",
+        _id: "8",
         name: "Spotlight Cinema movie search website",
         image: "/picture2.png",
         description: "Spotlight Cinema is a sleek, responsive movie search site built with HTML, CSS, and JavaScript, featuring real-time results via a movie API and a modern, fast interface.",
@@ -96,7 +108,7 @@ export default function Projects() {
         category: "frontend"
       },
       {
-        _id: "8",
+        _id: "9",
         name: "CEYLON EXPLORER traveling website",
         image: "/picture1.png",
         description: "CEYLON EXPLORER is a travel website built using HTML, CSS, Node.js, and MySQL. It allows users to explore top Sri Lankan destinations and includes user registration features.",
