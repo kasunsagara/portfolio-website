@@ -17,12 +17,12 @@ export default function Projects() {
         image: "/picture9.png",
         description: "This is a Smart Home Network built using Cisco Packet Tracer, where IoT devices are connected to a Wi-Fi network and can be turned ON/OFF using phones or tablets remotely anytime easily.",
         startDate: "2025-12-25",
-        endDate: "2025-11-29",
+        endDate: "2025-12-29",
         skills: ["DHCP", "Wi-Fi configuration"],
         githubLink: "https://github.com/kasunsagara/smart-home-network-setup-with-iot-devices.git",
         linkedinLink: "https://linkedin.com/in/yourprofile",
         category: "cisco networking"
-      },
+      },      
       {
         _id: "2",
         name: "Modern Smart Office Network Setup",
@@ -51,7 +51,7 @@ export default function Projects() {
         _id: "4",
         name: "Portfolio website",
         image: "/picture6.png",
-        description: "A modern, responsive React and Tailwind portfolio with dynamic roles, clean project sections, and an interactive contact form for a smooth, fast, engaging, visually appealing, highly intuitive, and well structured user experience.",
+        description: "A modern, responsive React and Tailwind portfolio with dynamic roles, clean project sections, and an interactive contact form for a smooth, fast, engaging, visually appealing, intuitive, structured experience.",
         startDate: "2025-04-18",
         endDate: "2025-05-04",
         skills: ["React.js", "Tailwind CSS"],
