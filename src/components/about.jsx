@@ -40,6 +40,8 @@ export default function About() {
       { name: "Routing", desc: "Network routing protocols", category: "cisco", icon: "FaProjectDiagram" },
       { name: "Switching", desc: "Network switching concepts", category: "cisco", icon: "FaExchangeAlt" },
       { name: "VLAN Configuration", desc: "Virtual LAN setup and management", category: "cisco", icon: "FaSitemap" },
+      { name: "Wi-Fi configuration", desc: "Wireless network setup", category: "cisco", icon: "FaWifi" },
+      { name: "DHCP", desc: "Dynamic Host Configuration Protocol", category: "cisco", icon: "FaNetworkWired" },
 
       // Tools & Technologies
       { name: "Git", desc: "Version control system", category: "tools", icon: "FaGitAlt" },

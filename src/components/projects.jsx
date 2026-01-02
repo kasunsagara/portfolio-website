@@ -18,7 +18,7 @@ export default function Projects() {
         description: "This is a Smart Home Network built using Cisco Packet Tracer, where IoT devices are connected to a Wi-Fi network and can be turned ON/OFF using phones or tablets remotely anytime easily.",
         startDate: "2025-12-25",
         endDate: "2025-12-29",
-        skills: ["DHCP", "Wi-Fi configuration"],
+        skills: ["Wi-Fi configuration", "DHCP"],
         githubLink: "https://github.com/kasunsagara/smart-home-network-setup-with-iot-devices.git",
         linkedinLink: "https://linkedin.com/in/yourprofile",
         category: "cisco networking"
