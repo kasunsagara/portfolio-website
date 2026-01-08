@@ -25,7 +25,7 @@ export default function Projects() {
       },      
       {
         _id: "2",
-        name: "Modern Smart Office Network Setup",
+        name: "Smart Office Network Setup",
         image: "/picture8.png",
         description: "A secure, scalable office network with VLANs, wireless SSIDs, VoIP, dynamic routing, and essential server services. Demonstrates real world professional network planning, security, and efficient management.",
         startDate: "2025-10-26",
