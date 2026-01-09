@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { Menu, X, Code, Terminal } from 'lucide-react';
+import { Menu, X, Terminal } from 'lucide-react';
 
 export default function Header() {
   const navigate = useNavigate();
@@ -123,13 +123,20 @@ export default function Header() {
                   className="flex items-center space-x-3 text-gray-300 hover:text-white py-3 px-4 rounded-xl hover:bg-gray-800/50 transition-all duration-300 border border-transparent hover:border-gray-700"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <Code size={16} className="text-cyan-400" />
                   <span className="font-medium">{label}</span>
                 </a>
               </li>
             ))}
             <li className="pt-4">
-              <button className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105">
+              <button 
+                            onClick={() => {
+                const contactSection = document.querySelector('#contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+                setIsMenuOpen(false); // for mobile menu close
+              }}
+              className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105">
                 Let's Talk
               </button>
             </li>
