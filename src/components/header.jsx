@@ -39,6 +39,15 @@ export default function Header() {
     };
   }, [navigate]);
 
+    // Reusable function for "Let's Talk"
+    const handleLetsTalkClick = () => {
+      const contactSection = document.querySelector('#contact');
+      if (contactSection) {
+      contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+      setIsMenuOpen(false); 
+    };  
+
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
       scrolled 
@@ -85,13 +94,7 @@ export default function Header() {
           ))}
           <li>
             <button
-              onClick={() => {
-                const contactSection = document.querySelector('#contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-                setIsMenuOpen(false); // for mobile menu close
-              }}
+              onClick={handleLetsTalkClick}
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium py-2 px-6 rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-cyan-500/25 border border-cyan-400/20"
             >
               Let's Talk
@@ -129,13 +132,7 @@ export default function Header() {
             ))}
             <li className="pt-4">
               <button 
-                            onClick={() => {
-                const contactSection = document.querySelector('#contact');
-                if (contactSection) {
-                  contactSection.scrollIntoView({ behavior: 'smooth' });
-                }
-                setIsMenuOpen(false); // for mobile menu close
-              }}
+              onClick={handleLetsTalkClick}
               className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-medium py-3 px-6 rounded-xl transition-all duration-300 transform hover:scale-105">
                 Let's Talk
               </button>
