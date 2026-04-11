@@ -73,9 +73,9 @@ export default function Projects() {
       },
       {
         _id: "6",
-        name: "KSW Beauty care web application",
+        name: "Beauty care web application",
         image: "/picture4.png",
-        description: "KSW Beauty Care is a MERN-stack beauty care web application with secure login, role-based access, and features for shopping, inventory management, and analytics, using Supabase for image storage.",
+        description: "This is a MERN-stack beauty care web application with secure login, role-based access, and features for shopping, inventory management, and analytics, using Supabase for image storage.",
         startDate: "2024-11-26",
         endDate: "2025-02-12",
         skills: ["MERN Stack", "MongoDB", "Express.js", "React.js", "Node.js","UI UX design", "Tailwind CSS"],
