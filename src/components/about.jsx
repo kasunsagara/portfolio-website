@@ -18,6 +18,7 @@ export default function About() {
     const localSkills = [
       // Frontend Development
       { name: "React.js", desc: "Frontend JS library", category: "frontend", icon: "FaReact" },
+      { name: "Next.js", desc: "React framework for SSR", category: "frontend", icon: "SiNextdotjs" },
       { name: "Tailwind CSS", desc: "Utility first CSS framework", category: "frontend", icon: "SiTailwindcss" },
       { name: "HTML", desc: "Markup language for structure", category: "frontend", icon: "FaHtml5" },
       { name: "CSS", desc: "Styling language for layout", category: "frontend", icon: "FaCss3Alt" },
@@ -26,6 +27,7 @@ export default function About() {
       // Backend Development
       { name: "Node.js", desc: "JavaScript runtime", category: "backend", icon: "FaNodeJs" },
       { name: "Express.js", desc: "Backend web framework", category: "backend", icon: "SiExpress" },
+      { name: "Nest.js", desc: "Progressive Node.js framework", category: "backend", icon: "SiNestjs" },
       { name: "APIs", desc: "Restful APIs", category: "backend", icon: "FaServer" },
       
       // Databases
