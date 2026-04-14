@@ -1,5 +1,5 @@
 {
-  "name": "cbc-frontend",
+  "name": "portfolio-website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,7 +13,7 @@
     "@react-oauth/google": "^0.12.1",
     "@supabase/supabase-js": "^2.47.10",
     "axios": "^1.7.9",
-    "cbc-frontend": "file:",
+    "portfolio-website": "file:",
     "framer-motion": "^12.23.24",
     "lucide-react": "^0.511.0",
     "react": "^18.3.1",
