@@ -5,7 +5,7 @@ import { SiCisco, SiJavascript, SiReact } from "react-icons/si";
 export default function Home() {
   const roles = [
     "Computer Science Undergraduate",
-    "Full Stack Web Developer (MERN Stack, Next.js, Nest.js)",
+    "Full Stack Web Developer (MERN Stack, Next.js, NestJS)",
     "UI/UX Designer",
     "Cisco Networking Enthusiast",
   ];

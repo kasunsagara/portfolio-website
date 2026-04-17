@@ -27,7 +27,7 @@ export default function About() {
       // Backend Development
       { name: "Node.js", desc: "JavaScript runtime", category: "backend", icon: "FaNodeJs" },
       { name: "Express.js", desc: "Backend web framework", category: "backend", icon: "SiExpress" },
-      { name: "Nest.js", desc: "Progressive Node.js framework", category: "backend", icon: "SiNestjs" },
+      { name: "NestJS", desc: "Progressive Node.js framework", category: "backend", icon: "SiNestjs" },
       { name: "APIs", desc: "Restful APIs", category: "backend", icon: "FaServer" },
       
       // Databases
